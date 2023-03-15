@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "https://chat-botgammaltech.vercel.app",
+    origin: "https://imen.hossem.tn",
   })
 );
 
