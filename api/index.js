@@ -6,7 +6,11 @@ require("dotenv").config();
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://chat-botgammaltech.vercel.app",
+  })
+);
 
 const config = new Configuration({
   apiKey: process.env.API_TOKEN,
