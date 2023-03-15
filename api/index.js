@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "http://149.202.53.219:3333",
+    origin: "https://chat-botgammaltech.hossem.tn",
   })
 );
 
