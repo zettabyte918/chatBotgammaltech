@@ -6,11 +6,7 @@ require("dotenv").config();
 
 const app = express();
 app.use(bodyParser.json());
-app.use(
-  cors({
-    origin: "https://imen.hossem.tn",
-  })
-);
+app.use(cors());
 
 const config = new Configuration({
   apiKey: process.env.API_TOKEN,
