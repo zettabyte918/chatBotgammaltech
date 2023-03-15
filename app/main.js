@@ -27,7 +27,7 @@ function sendMessage() {
     if (wait.innerHTML.length > 3) window.dotsGoingUp = false;
   }, 250);
 
-  fetch("http://localhost:3333/message", {
+  fetch("http://149.202.53.219:3333/message", {
     method: "POST",
     headers: {
       accept: "application.json",
